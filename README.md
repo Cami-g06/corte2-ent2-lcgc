@@ -1,54 +1,69 @@
 # Entrega 2 - Resolución de problemas algorítmicos
 
-**Integrante:** LAURA CAMILA GARCES CASTRO  
+**Integrante:** Laura Camila Garces Castro  
 **Modalidad:** Individual  
-**Lenguaje:** C++17  
-**Rama sugerida:** `lcgc`
+**Lenguaje:** C++17
+
+## Descripción
+
+Este repositorio contiene las soluciones desarrolladas para cinco ejercicios de programación propuestos en LeetCode y Exercism. Las implementaciones fueron escritas en C++17 e incluyen archivos de prueba local para verificar su funcionamiento.
 
 ## Ejercicios resueltos
 
 ### LeetCode
-1. Two Sum
-2. Excel Sheet Column Number
-3. Best Time to Buy and Sell Stock
+
+1. **Two Sum**
+   - Solución: `leetcode/two-sum/solution.cpp`
+   - Pruebas locales: `leetcode/two-sum/main.cpp`
+
+2. **Excel Sheet Column Number**
+   - Solución: `leetcode/excel-sheet-column-number/solution.cpp`
+   - Pruebas locales: `leetcode/excel-sheet-column-number/main.cpp`
+
+3. **Best Time to Buy and Sell Stock**
+   - Solución: `leetcode/best-time-to-buy-and-sell-stock/solution.cpp`
+   - Pruebas locales: `leetcode/best-time-to-buy-and-sell-stock/main.cpp`
 
 ### Exercism
-4. Armstrong Numbers
-5. Hamming Distance
 
-## Estructura
+4. **Armstrong Numbers**
+   - Declaración: `exercism/armstrong-numbers/armstrong_numbers.h`
+   - Implementación: `exercism/armstrong-numbers/armstrong_numbers.cpp`
+   - Pruebas locales: `exercism/armstrong-numbers/test.cpp`
 
-- `leetcode/`: soluciones de LeetCode y ejecutables locales de prueba.
-- `exercism/`: archivos de implementación, cabeceras y pruebas locales.
-- `informe/`: informe de la entrega en PDF.
-- `run_tests.sh`: compila y ejecuta todas las pruebas locales.
+5. **Hamming Distance**
+   - Declaración: `exercism/hamming/hamming.h`
+   - Implementación: `exercism/hamming/hamming.cpp`
+   - Pruebas locales: `exercism/hamming/test.cpp`
 
-## Requisitos
+## Estructura del repositorio
 
-- Compilador compatible con C++17, por ejemplo `g++`.
-- Git para control de versiones.
-- Bash para ejecutar el archivo de pruebas conjunto.
+```text
+corte2_ent2_lcgc/
+├── README.md
+├── .gitignore
+├── run_tests.sh
+├── leetcode/
+│   ├── two-sum/
+│   ├── excel-sheet-column-number/
+│   └── best-time-to-buy-and-sell-stock/
+├── exercism/
+│   ├── armstrong-numbers/
+│   └── hamming/
+└── informe/
+```
 
-## Ejecutar todas las pruebas
+## Compilación y pruebas
 
-Desde la raíz del repositorio:
+Para compilar y ejecutar todas las pruebas locales desde la raíz del repositorio:
 
 ```bash
 chmod +x run_tests.sh
 ./run_tests.sh
 ```
 
-Los ejecutables se generan dentro de `build/`, carpeta ignorada por Git.
+Los ejecutables se generan temporalmente en la carpeta `build`, excluida del repositorio mediante `.gitignore`.
 
-## Subir a GitHub
+## Informe
 
-```bash
-git init
-git checkout -b lcgc
-git add .
-git commit -m "Entrega 2: soluciones LeetCode y Exercism"
-git remote add origin URL_DEL_REPOSITORIO
-git push -u origin lcgc
-```
-
-Si el repositorio institucional ya existe, debe clonarse primero y luego copiar en él el contenido de esta entrega.
+La carpeta `informe` contiene el documento de la entrega con la metodología, las dificultades, el análisis de complejidad y los resultados correspondientes a cada ejercicio.
