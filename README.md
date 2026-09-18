@@ -72,5 +72,3 @@ git commit -m "Entrega 2: soluciones LeetCode y Exercism"
 git remote add origin URL_DEL_REPOSITORIO
 git push -u origin lcgc
 ```
-
-Si el repositorio institucional ya existe, debe clonarse primero y luego copiar en él el contenido de esta entrega.
